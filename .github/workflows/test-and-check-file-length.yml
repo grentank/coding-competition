@@ -41,3 +41,11 @@ jobs:
       run: |
         FILE_LENGTH=$(wc -c < part-3/index.js)
         echo "The length of the file part-3/index.js is $FILE_LENGTH bytes."
+    
+    - name: Run tests 4
+      run: npm run test-part-4
+
+    - name: Check file length 4
+      run: |
+        FILE_LENGTH=$(wc -c < part-4/index.js)
+        echo "The length of the file part-4/index.js is $FILE_LENGTH bytes."
