@@ -1,6 +1,7 @@
 function createCounter(n) {
-  const a = (n) => (n += 1);
-  return a;
+  return function () {
+    return n++;
+  };
 }
 
 console.log(createCounter(1));
