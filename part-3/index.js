@@ -1,6 +1,6 @@
-async function addPromises(x, y, z) {
-  return new Promise((resolve) => {
-    const result = x + y + z;
+async function addPromises(arr) {
+  return new Promise.all((resolve) => {
+    const result = arr.reduce((acc, cur) => acc + cur);
     resolve(result);
   }).then((res) => console.log(res));
 }
