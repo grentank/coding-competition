@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "new-task": "./new-task.sh"
+    "new-task": "./new-task.sh",
+    "test-part-1": "jest part-1/"
   },
   "keywords": [],
   "author": "",
