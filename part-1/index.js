@@ -1,3 +1,5 @@
-function createCounter(n) {}
+function createCounter(n) {
+
+}
 
 module.exports = createCounter;
