@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 function createCounter (){
 	let counter = 0;
 	return {
@@ -8,6 +9,12 @@ function createCounter (){
 		return counter
 	}
 	};
+=======
+function createCounter(n) {
+    return function () {
+        
+    }
+>>>>>>> main
 }
 
 module.exports = createCounter;
