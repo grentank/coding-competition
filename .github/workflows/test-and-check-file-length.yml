@@ -19,9 +19,9 @@ jobs:
       run: npm install
 
     - name: Run tests
-      run: npm run test-part-2
+      run: npm run test-part-3
 
     - name: Check file length
       run: |
-        FILE_LENGTH=$(wc -c < part-2/index.js)
-        echo "The length of the file part-2/index.js is $FILE_LENGTH bytes."
+        FILE_LENGTH=$(wc -c < part-3/index.js)
+        echo "The length of the file part-3/index.js is $FILE_LENGTH bytes."
