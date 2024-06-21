@@ -1,0 +1,27 @@
+name: Test and Check File Length
+
+on: [push]
+
+jobs:
+  test-and-check-length:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Check out repository
+      uses: actions/checkout@v4
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '20'
+
+    - name: Install dependencies
+      run: npm install
+
+    - name: Run tests
+      run: npm run test-part-1
+
+    - name: Check file length
+      run: |
+        FILE_LENGTH=$(wc -c < part-1/index.js)
+        echo "The length of the file part-1/index.js is $FILE_LENGTH bytes."
