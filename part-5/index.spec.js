@@ -1,4 +1,4 @@
-const checkParity = require("./path_to_your_checkParity_file");
+const checkParity = require("./index");
 
 describe("Тесты part-5", function () {
   it("Тестирует чётность", function () {
