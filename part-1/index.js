@@ -1,13 +1,14 @@
-
-function createCounter(n) {
-	let res = 0
-	function counter(){
-		return n + res
-	}
-	res 
-	return res
+function createCounter (){
+  let counter = 0
+  return {
+    increment: function() {
+      counter += 1
+    },
+    currentValue: function() {
+      return counter
+    }
+  }
 }
-
-console.log(createCounter(1))
+console.log(createCounter(0))
 
 module.exports = createCounter;
