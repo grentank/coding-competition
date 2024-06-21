@@ -1,11 +1,12 @@
 function createCounter(n) {
-  function (n) {
-    return n++
+  let count = n;
+
+  function counter() {
+    count++;
+    console.log(count);
   }
+
+  return counter;
 }
-
-const counter = createCounter(5);
-
-console.log(counter());
 
 module.exports = createCounter;
