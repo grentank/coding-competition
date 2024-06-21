@@ -5,7 +5,11 @@
   "main": "index.js",
   "scripts": {
     "new-task": "./new-task.sh",
-    "test-part-1": "jest part-1/"
+    "test-part-1": "jest part-1/",
+    "test-part-2": "jest part-2/",
+    "test-part-3": "jest part-3/",
+    "test-part-4": "jest part-4/",
+    "test-part-5": "jest part-5/"
   },
   "keywords": [],
   "author": "",
