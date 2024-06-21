@@ -1,6 +1,11 @@
 function createCounter(n) {
+<<<<<<< HEAD
     return function counter() {
         return n++
+=======
+    return function () {
+        
+>>>>>>> main
     }
 }
 
